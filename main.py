@@ -1,4 +1,4 @@
-:#Mason Zilch Lab 9
+#Mason Zilch Lab 9
 
 def encode(password):
     encoded_password = ""
@@ -24,12 +24,18 @@ def main():
         print("2. Decode")
         print("3. Quit")
         print()
-        pick = int(input("Please enter an option: ")
+        pick = int(input("Please enter an option: "))
 
         if pick == 1:
-            password = int(input("Please enter your password to encode: "))
+            password = input("Please enter your password to encode: ")
             encoded_password = encode(password)
             print("Your password has been encoded and stored!")
+        if pick == 2:
+            decoded_password = decode(password)
+            print(f"The encoded password is: {encoded_password}, and the original password is: {decoded_password}")
+        if pick == 3:
+            False
+            break
 
 
 if __name__ == "__main__":
